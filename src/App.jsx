@@ -40,7 +40,7 @@ function App() {
         <>
           <form onSubmit={handleFormSubmit}>
             <label htmlFor="username">
-              Username:
+              Username
               <input
                 type="text"
                 value={formData.username}
@@ -58,7 +58,7 @@ function App() {
             </label>
             <br />
             <label htmlFor="password">
-              Password:
+              Password
               <input
                 type="password"
                 value={formData.password}

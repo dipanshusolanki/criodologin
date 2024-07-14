@@ -39,41 +39,38 @@ function App() {
       {!formSubmitStatus.isSubmitted === true ? (
         <>
           <form onSubmit={handleFormSubmit}>
-            <label htmlFor="username">
-              Username
-              <input
-                type="text"
-                value={formData.username}
-                name="username"
-                id="username"
-                placeholder="username"
-                required
-                onChange={(e) => {
-                  setFormData((prev) => ({
-                    ...prev,
-                    username: e.target.value,
-                  }));
-                }}
-              />
-            </label>
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              value={formData.username}
+              name="username"
+              id="username"
+              placeholder="username"
+              required
+              onChange={(e) => {
+                setFormData((prev) => ({
+                  ...prev,
+                  username: e.target.value,
+                }));
+              }}
+            />
+
             <br />
-            <label htmlFor="password">
-              Password
-              <input
-                type="password"
-                value={formData.password}
-                name="password"
-                id="password"
-                placeholder="password"
-                required
-                onChange={(e) => {
-                  setFormData((prev) => ({
-                    ...prev,
-                    password: e.target.value,
-                  }));
-                }}
-              />
-            </label>
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              value={formData.password}
+              name="password"
+              id="password"
+              placeholder="password"
+              required
+              onChange={(e) => {
+                setFormData((prev) => ({
+                  ...prev,
+                  password: e.target.value,
+                }));
+              }}
+            />
             <br />
             <button type="submit">Submit</button>
           </form>
